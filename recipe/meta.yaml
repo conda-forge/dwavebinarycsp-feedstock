@@ -1,5 +1,5 @@
 {% set name = "dwavebinarycsp" %}
-{% set version = "0.1.4" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dwavebinarycsp-{{ version }}.tar.gz
-  sha256: 55c1ec625889f1b784687c7646c5ad9093b2f2bf2be8758ff54e5aba1a266d41
+  sha256: 7a5cf530e4a7c1288055c9b9fd0d3032175b06d19da7642fe5724dc85050ea1e
 
 build:
   noarch: python
