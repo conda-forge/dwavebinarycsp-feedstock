@@ -1,13 +1,13 @@
 {% set name = "dwavebinarycsp" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dwavebinarycsp-{{ version }}.tar.gz
-  sha256: 7a5cf530e4a7c1288055c9b9fd0d3032175b06d19da7642fe5724dc85050ea1e
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dwavebinarycsp-{{ version }}.tar.gz
+  sha256: 7af07cd269809db94dbb4bee9b9cee437e9199fb42be6f2fcf68971a6f01bdbe
 
 build:
   noarch: python
@@ -17,14 +17,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.9
     - setuptools >=46.4.0
     - wheel
   run:
-    - dimod >=0.10.9,<0.13.0
-    - networkx >=2.0,<3.0
-    - penaltymodel >=1.0.0,<2.0.0
-    - python >=3.7
+    - dimod >=0.10.9
+    - networkx >=2.4
+    - penaltymodel >=1.0.0
+    - python >=3.9
 
 test:
   imports:
